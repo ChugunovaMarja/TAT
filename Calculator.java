@@ -11,14 +11,14 @@ public static void main(String[] args) {
 double a = Double.parseDouble(args[0]);
 double b = Double.parseDouble(args[1]);
 
-if (b!=0) {
+if (b != 0) {
    System.out.println("Sum = " + sum(a,b));
    System.out.println("Difference = " + dif(a,b));
    System.out.println("Cup Product = " + cupProduct(a,b)); 
    System.out.println("Quotient = " + quotient(a,b));
  }
- else 
-	 System.out.println("Cannot divide by zero");
+ else
+   System.out.println("Cannot divide by zero");
 }
 
 public static double sum(double a, double b) { //calculates sum of two numbers
