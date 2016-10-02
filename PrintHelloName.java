@@ -6,11 +6,9 @@ public class PrintHelloName {
 * Prints "Hello, [Name]"
 */
 public static void main(String[] args) { 
-    
-    if (args.length>0)
-     System.out.println("Hello, " + args[0]);
+    if (args.length > 0)
+        System.out.println("Hello, " + args[0]);
     else 
-     System.out.println("No arguments");
-        
-   	}
+        System.out.println("No arguments");
+}
 }
