@@ -1,12 +1,12 @@
 /** 
-* main class for calculating sum, 
-* difference, cup product and 
-* quotient of two numbers
-*/
+ * main class for calculating sum, 
+ * difference, cup product and 
+ * quotient of two numbers
+ */
 public class Calculator {
 /**
-* displays sum, difference, cup product and quotient of two numbers
-*/
+ * displays sum, difference, cup product and quotient of two numbers
+ */
 public static void main(String[] args) { 
 
 double a = Double.parseDouble(args[0]);
@@ -22,26 +22,26 @@ if (b != 0) {
   }
 }
 /**
-* calculates sum of two numbers
-*/
+ * calculates sum of two numbers
+ */
 public static double sum(double a, double b) {
     return (a+b);
 }
 /**
-* calculates difference of two numbers
-*/
+ * calculates difference of two numbers
+ */
 public static double dif(double a, double b) { 
     return (a-b);
 }
 /**
-* calculates cup product of two numbers
-*/
+ * calculates cup product of two numbers
+ */
 public static double cupProduct(double a, double b) { 
     return (a*b);
 } 
 /**
-* calculates quotient of two numbers
-*/
+ * calculates quotient of two numbers
+ */
 public static double quotient(double a, double b) { 
     return (a/b);
 }
