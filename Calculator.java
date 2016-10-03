@@ -12,7 +12,7 @@ public static void main(String[] args) {
 double a = Double.parseDouble(args[0]);
 double b = Double.parseDouble(args[1]);
 
-if (b != 0) {
+if (b != 0.0) {
     System.out.println("Sum = " + sum(a,b));
     System.out.println("Difference = " + dif(a,b));
     System.out.println("Cup Product = " + cupProduct(a,b)); 
