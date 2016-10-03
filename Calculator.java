@@ -1,4 +1,5 @@
-/** main class for calculating sum, 
+/** 
+* main class for calculating sum, 
 * difference, cup product and 
 * quotient of two numbers
 */
@@ -16,20 +17,32 @@ if (b != 0) {
     System.out.println("Difference = " + dif(a,b));
     System.out.println("Cup Product = " + cupProduct(a,b)); 
     System.out.println("Quotient = " + quotient(a,b));
-} else
+} else {
     System.out.println("Cannot divide by zero");
+  }
 }
-
-public static double sum(double a, double b) { //calculates sum of two numbers
+/**
+* calculates sum of two numbers
+*/
+public static double sum(double a, double b) {
     return (a+b);
 }
-public static double dif(double a, double b) { //calculates difference of two numbers
+/**
+* calculates difference of two numbers
+*/
+public static double dif(double a, double b) { 
     return (a-b);
 }
-public static double cupProduct(double a, double b) { //calculates cup product of two numbers
+/**
+* calculates cup product of two numbers
+*/
+public static double cupProduct(double a, double b) { 
     return (a*b);
 } 
-public static double quotient(double a, double b) { //calculates quotient of two numbers
+/**
+* calculates quotient of two numbers
+*/
+public static double quotient(double a, double b) { 
     return (a/b);
 }
 }
