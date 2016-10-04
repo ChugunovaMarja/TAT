@@ -5,10 +5,8 @@ import java.util.Scanner;
  * showing type of
  * triangle
  */
-
 public class Triangle {
 /**
- * main method 
  * gets data and calls 
  * functions checking data 
  * and showing type of triangle
