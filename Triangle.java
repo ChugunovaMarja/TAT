@@ -30,7 +30,7 @@ checkValid(b);
 checkValid(c);
 
 if(checkExistence(a,b,c)==true) {
-    getType(a,b,c);
+    System.out.println(getType(a,b,c));
 }
 }
 
@@ -60,15 +60,14 @@ return i;
 /**
  * determines type of triangle
  */
-public static void getType(double a, double b, double c) { 
-   if ((a==b) && (b==c) && (a==c)) {
-   System.out.println("Ravnostoronnij");
-   } else {
-       if (((a==b) && (a!=c)) || ((a==c) && (a!=b)) || ((b==c) && (b!=a))) {
-         System.out.println("Ravnobokij");
-        } else {
-            System.out.println("Obychnyj");
-        }
+public static String getType(double a, double b, double c) { 
+    if ((a==b) && (b==c) && (a==c)) {
+        return ("Ravnostoronnij");
+    } 
+    if (((a==b) && (a!=c)) || ((a==c) && (a!=b)) || ((b==c) && (b!=a))) {
+        return("Ravnobokij");
+    } else {
+         return("Obychnyj");
     }
 }
 
