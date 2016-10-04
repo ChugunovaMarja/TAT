@@ -28,7 +28,7 @@ checkValid(a);
 double d = Discriminant(a, b, c);
 
 if (d < 0) {
-	System.out.println("No real roots");
+    System.out.println("No real roots");
     System.exit(0);	
 }
 double[] roots = new double[2];
