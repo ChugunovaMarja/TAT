@@ -5,10 +5,8 @@ import java.util.Scanner;
  * searching for roots
  * of quadratic equation
  */
-
 public class QuadraticEqu {
 /**
- * main method 
  * checking discriminant and
  * calling for fuctions
  * checking data and searching roots
