@@ -13,36 +13,36 @@ public class QuadraticEqu {
    */
   public static void main(String[] args) { 
 
-  double a;
-  double b;
-  double c;
+    double a;
+    double b;
+    double c;
 
-  Scanner sc = new Scanner(System.in);		
-  System.out.println("Enter coefficients \n");
-  while (true) {
-      try {
-          a = Double.parseDouble(sc.next());
-          b = Double.parseDouble(sc.next());
-          c = Double.parseDouble(sc.next());
-          break; 
-    } catch (NumberFormatException e) {
-          System.out.println("Invalid input");
+    Scanner sc = new Scanner(System.in);		
+    System.out.println("Enter coefficients \n");
+    while (true) {
+        try {
+            a = Double.parseDouble(sc.next());
+            b = Double.parseDouble(sc.next());
+            c = Double.parseDouble(sc.next());
+            break; 
+      } catch (NumberFormatException e) {
+            System.out.println("Invalid input");
+      }
     }
-  }
 
-  checkValid(a);
+    checkValid(a);
 
-  double d = Discriminant(a, b, c);
+    double d = Discriminant(a, b, c);
 
-  if (d < 0) {
-      System.out.println("No real roots");
-      System.exit(0);	
-  }
-  double[] roots = new double[2];
-  roots = roots(a,b,c,d);
+    if (d < 0) {
+        System.out.println("No real roots");
+        System.exit(0);	
+    }
+    double[] roots = new double[2];
+    roots = roots(a,b,c,d);
 
-  System.out.println("x1 = " + roots[0]);
-  System.out.println("x2 = " + roots[1]);
+    System.out.println("x1 = " + roots[0]);
+    System.out.println("x2 = " + roots[1]);
   }
 
   /**
