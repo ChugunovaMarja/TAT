@@ -19,6 +19,11 @@ public class QuadraticEqu {
 
     System.out.println("Enter coefficient a");
     a = readData();
+    
+    while(checkNull(a)==false) {
+      System.out.println("Enter coefficient a");
+      a = readData();
+    }
     System.out.println("Enter coefficient b");
     b = readData();
     System.out.println("Enter coefficient c");
@@ -54,11 +59,13 @@ public class QuadraticEqu {
   /**
    * checking for zero
    */
-  public static void checkValid(double k) {
-  if (Double.isInfinite(1/k)) {
-      System.out.println("First coefficient cannot be equal zero");
-      System.exit(0);
+  public static boolean checkNull(double k) {
+      boolean i = true;
+      if (Double.isInfinite(1/k)) {
+        System.out.println("First coefficient cannot be equal zero");
+        i = false;
       }
+      return i;
   }
   /**
    * returns discriminant
