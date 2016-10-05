@@ -19,9 +19,15 @@ public class Triangle {
 
   Scanner sc = new Scanner(System.in);		
   System.out.println("Enter sides \n");
-  a = sc.nextDouble();
-  b = sc.nextDouble();
-  c = sc.nextDouble();
+  while (true) {
+      try {
+          a = Double.parseDouble(sc.next());
+          b = Double.parseDouble(sc.next());
+          c = Double.parseDouble(sc.next());
+          break; 
+    } catch (NumberFormatException e) {
+          System.out.println("Invalid input");
+  }
 
   checkValid(a);
   checkValid(b);
