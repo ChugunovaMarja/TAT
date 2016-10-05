@@ -8,11 +8,8 @@ import java.util.Scanner;
 public class QuadraticEqu {
   /**
    * @brief checking discriminant and calling for fuctions
-   * checking data and searching roots
-   * @param a is the first coefficient of quadratic equation
-   * @param b is the second coefficient of quadratic equation
-   * @param c is the third coefficient of quadratic equation
-   * @param d is the discriminant of quadratic equation
+   * checking data and searching roots. The program does not involve 
+   * input from the command line, only console
    */
   public static void main(String[] args) { 
 
