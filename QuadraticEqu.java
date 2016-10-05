@@ -20,7 +20,7 @@ public class QuadraticEqu {
     double b = 0;
     double c = 0;
 
-    while(isNull(a)==true) {
+    while(isEqualToZero(a)==true) {
       System.out.println("Enter coefficient a");
       a = readData();
     }
@@ -60,7 +60,7 @@ public class QuadraticEqu {
    * @param i gets false if parameter is zero
    * @return boolean i == false if parameter is zero
    */
-  public static boolean isNull(double k) {
+  public static boolean isEqualToZero(double k) {
       if (Double.isInfinite(1/k)) {
         System.out.println("First coefficient cannot be equal zero");
         return true;
