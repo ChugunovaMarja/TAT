@@ -20,10 +20,7 @@ public class QuadraticEqu {
     double b = 0;
     double c = 0;
 
-    System.out.println("Enter coefficient a");
-    a = readData();
-    
-    while(checkNull(a)==false) {
+    while(isNull(a)==true) {
       System.out.println("Enter coefficient a");
       a = readData();
     }
@@ -31,8 +28,6 @@ public class QuadraticEqu {
     b = readData();
     System.out.println("Enter coefficient c");
     c = readData();
-
-    checkValid(a);
 
     double d = Discriminant(a, b, c);
 
@@ -65,13 +60,13 @@ public class QuadraticEqu {
    * @param i gets false if parameter is zero
    * @return boolean i == false if parameter is zero
    */
-  public static boolean checkNull(double k) {
-      boolean i = true;
+  public static boolean isNull(double k) {
       if (Double.isInfinite(1/k)) {
         System.out.println("First coefficient cannot be equal zero");
-        i = false;
+        return true;
+      } else {
+        return false;
       }
-      return i;
   }
   /**
    * @brief calculates discriminant
