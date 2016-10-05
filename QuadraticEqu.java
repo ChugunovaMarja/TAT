@@ -1,15 +1,18 @@
 import java.util.Scanner;
 
 /** 
- * main class  
- * searching for roots
+ * main class searching for roots
  * of quadratic equation
+ * @author Maria Chugunova
  */
 public class QuadraticEqu {
   /**
-   * checking discriminant and
-   * calling for fuctions
+   * @brief checking discriminant and calling for fuctions
    * checking data and searching roots
+   * @param a is the first coefficient of quadratic equation
+   * @param b is the second coefficient of quadratic equation
+   * @param c is the third coefficient of quadratic equation
+   * @param d is the discriminant of quadratic equation
    */
   public static void main(String[] args) { 
 
@@ -44,7 +47,8 @@ public class QuadraticEqu {
     System.out.println("x2 = " + roots[1]);
   }
   /**
-   * reads data and checks if it's double
+   * @brief reads data and checks if it's double
+   * @return Double returns entered coefficient if it's double
    */
   public static double readData() {
       Scanner sc = new Scanner(System.in);
@@ -57,7 +61,9 @@ public class QuadraticEqu {
       }
   }
   /**
-   * checking for zero
+   * @brief checking if parameter equal zero and returning false if it is
+   * @param i gets false if parameter is zero
+   * @return boolean i == false if parameter is zero
    */
   public static boolean checkNull(double k) {
       boolean i = true;
@@ -68,13 +74,22 @@ public class QuadraticEqu {
       return i;
   }
   /**
-   * returns discriminant
+   * @brief calculates discriminant
+   * @param a is the first coefficient of quadratic equation
+   * @param b is the second coefficient of quadratic equation
+   * @param c is the third coefficient of quadratic equation
+   * @return double discriminant of quadratic equation
    */
   public static double Discriminant(double a, double b, double c) { 
      return (b*b-4*a*c);
   }
   /**
-   * returns array with roots
+   * @brief calculates roots and returns array with x1 and x2
+   * @param a is the first coefficient of quadratic equation
+   * @param b is the second coefficient of quadratic equation
+   * @param c is the third coefficient of quadratic equation
+   * @param d is the discriminant of quadratic equation
+   * @return double[] array with roots of quadratic equation
    */
   public static double[] roots (double a, double b, double c, double d) { 
   double[] roots = new double[2];
