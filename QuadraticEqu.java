@@ -54,8 +54,7 @@ public class QuadraticEqu {
   }
   /**
    * @brief checking if parameter equal zero and returning false if it is
-   * @param i gets false if parameter is zero
-   * @return boolean i == false if parameter is zero
+   * @return boolean true if parameter is zero
    */
   public static boolean isEqualToZero(double k) {
       if (Double.isInfinite(1/k)) {
