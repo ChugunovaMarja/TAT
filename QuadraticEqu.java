@@ -13,22 +13,16 @@ public class QuadraticEqu {
    */
   public static void main(String[] args) { 
 
-    double a;
-    double b;
-    double c;
+    double a = 0;
+    double b = 0;
+    double c = 0;
 
-    Scanner sc = new Scanner(System.in);		
-    System.out.println("Enter coefficients \n");
-    while (true) {
-        try {
-            a = Double.parseDouble(sc.next());
-            b = Double.parseDouble(sc.next());
-            c = Double.parseDouble(sc.next());
-            break; 
-      } catch (NumberFormatException e) {
-            System.out.println("Invalid input");
-      }
-    }
+    System.out.println("Enter coefficient a");
+    a = readData();
+	  System.out.println("Enter coefficient b");
+    b = readData();
+	  System.out.println("Enter coefficient c");
+    c = readData();
 
     checkValid(a);
 
@@ -44,7 +38,22 @@ public class QuadraticEqu {
     System.out.println("x1 = " + roots[0]);
     System.out.println("x2 = " + roots[1]);
   }
-
+  /**
+   * reads data and checks if it's double
+   */
+  public static double readData() {
+      Scanner sc = new Scanner(System.in);
+	    double n = 0;
+	    while (true) {
+		    try {
+		      n = Double.parseDouble(sc.next());
+			    break;
+		    } catch (NumberFormatException e) {
+            System.out.println("Coefficient must be double. Try again");
+        }
+	  }
+	  return n;
+  }
   /**
    * checking for zero
    */
