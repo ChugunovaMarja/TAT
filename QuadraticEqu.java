@@ -65,7 +65,7 @@ public class QuadraticEqu {
         System.out.println("First coefficient cannot be equal zero");
         return true;
       } else {
-        return false;
+          return false;
       }
   }
   /**
