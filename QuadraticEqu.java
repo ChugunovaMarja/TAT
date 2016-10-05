@@ -51,7 +51,7 @@ public class QuadraticEqu {
         } catch (NumberFormatException e) {
             System.out.println("Coefficient must be double. Try again");
         }
-        }
+      }
       return n;
   }
   /**
