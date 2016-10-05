@@ -43,16 +43,13 @@ public class QuadraticEqu {
    */
   public static double readData() {
       Scanner sc = new Scanner(System.in);
-      double n = 0;
       while (true) {
         try {
-          n = Double.parseDouble(sc.next());
-          break;
+          return Double.parseDouble(sc.next());
         } catch (NumberFormatException e) {
             System.out.println("Coefficient must be double. Try again");
         }
       }
-      return n;
   }
   /**
    * checking for zero
