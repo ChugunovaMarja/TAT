@@ -19,9 +19,9 @@ public class QuadraticEqu {
 
     System.out.println("Enter coefficient a");
     a = readData();
-	  System.out.println("Enter coefficient b");
+    System.out.println("Enter coefficient b");
     b = readData();
-	  System.out.println("Enter coefficient c");
+    System.out.println("Enter coefficient c");
     c = readData();
 
     checkValid(a);
@@ -29,8 +29,8 @@ public class QuadraticEqu {
     double d = Discriminant(a, b, c);
 
     if (d < 0) {
-        System.out.println("No real roots");
-        System.exit(0);	
+      System.out.println("No real roots");
+      System.exit(0);	
     }
     double[] roots = new double[2];
     roots = roots(a,b,c,d);
@@ -43,16 +43,16 @@ public class QuadraticEqu {
    */
   public static double readData() {
       Scanner sc = new Scanner(System.in);
-	    double n = 0;
-	    while (true) {
-		    try {
-		      n = Double.parseDouble(sc.next());
-			    break;
-		    } catch (NumberFormatException e) {
+      double n = 0;
+      while (true) {
+        try {
+          n = Double.parseDouble(sc.next());
+          break;
+        } catch (NumberFormatException e) {
             System.out.println("Coefficient must be double. Try again");
         }
-	  }
-	  return n;
+        }
+      return n;
   }
   /**
    * checking for zero
