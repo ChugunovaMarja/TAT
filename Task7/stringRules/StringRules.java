@@ -43,6 +43,6 @@ public class StringRules {
      * @param rule is an instance of specific rule
      */
     public static void printResults(Rule rule) {
-      System.out.println(rule.checkRule());    
+      System.out.print(rule.checkRule());    
     }
 }
