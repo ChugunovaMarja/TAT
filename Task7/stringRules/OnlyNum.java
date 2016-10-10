@@ -10,10 +10,11 @@ public class OnlyNum extends Rule {
     
     String line;
     
+    
     /**
-	 * Constructs instance with line from main class
-	 * @param line is a line from main class
-	 */
+     * Constructs instance with line from main class
+     * @param line is a line from main class
+     */
     public OnlyNum(String line) {
         this.line = line;
     }
