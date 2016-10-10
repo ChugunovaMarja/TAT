@@ -19,8 +19,8 @@ public class StringRules {
      */
     public static void main(String[] args) {
         
-        try{
-            Scanner sc = new Scanner(System.in);
+        try {
+          Scanner sc = new Scanner(System.in);
           System.out.println("Print line");
           String line = sc.nextLine();
         
