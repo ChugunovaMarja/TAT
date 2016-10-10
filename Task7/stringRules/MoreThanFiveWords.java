@@ -19,6 +19,17 @@ public class MoreThanFiveWords extends Rule {
     }
     
     /**
+     * divides original line into
+     * array of separate words
+     * @param line is an original line
+     * @return array with separate words
+     */
+    public String[] intoWordsArray() {
+        String[] words = line.split("[\\p{Punct}\\s]+");
+        return words;
+    }
+    
+    /**
      * checks if line has more than five words
      * @param words is the array of separate words from
      * original line
