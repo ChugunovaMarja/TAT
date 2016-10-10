@@ -14,6 +14,11 @@ public class DictionaryWord extends Rule {
     private String[] dictionary = {"mama", "myla", "ramu"};
     private String result = null;
     
+        
+    /**
+     * Constructs instance with line from main class
+     * @param line is a line from main class
+     */
     public DictionaryWord(String line) {
         this.line = line;
     }
