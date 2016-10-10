@@ -27,7 +27,7 @@ public class NoNum extends Rule {
         if (line.matches("^\\D+$")) {
             return ("Complies rule 'Has no numbers'");
         } else {
-            return null;
+            return "";
         }
     }
 }
