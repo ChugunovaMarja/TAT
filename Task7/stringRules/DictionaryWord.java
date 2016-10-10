@@ -31,7 +31,8 @@ public class DictionaryWord extends Rule {
      */
     @Override
     public String checkRule() {
-        String[] words = intoWordsArray(line);
+        MoreThanFiveWords moreThanFiveWords = new MoreThanFiveWords(line);
+        String[] words = moreThanFiveWords.intoWordsArray();
         for(int i = 0; i<words.length; i++) {
             for(int j = 0; j<dictionary.length; j++) {
                 if (words[i].equals(dictionary[j])) {
