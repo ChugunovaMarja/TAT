@@ -28,7 +28,7 @@ public class OnlyNum extends Rule {
         if (line.matches("^\\d+$")) {
             return ("Complies rule 'Has only numbers' \n");
         } else {
-            return null;
+            return "";
         }
     }
 }
