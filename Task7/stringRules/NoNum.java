@@ -10,6 +10,10 @@ public class NoNum extends Rule {
     
     String line;
     
+    /**
+     * Constructs instance with line from main class
+     * @param line is a line from main class
+     */
     public NoNum(String line) {
         this.line = line;
     } 
