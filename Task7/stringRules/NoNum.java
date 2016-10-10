@@ -25,7 +25,7 @@ public class NoNum extends Rule {
     @Override
     public String checkRule() {
         if (line.matches("^\\D+$")) {
-            return ("Complies rule 'Has no numbers'");
+            return ("Complies rule 'Has no numbers' \n");
         } else {
             return "";
         }
