@@ -12,7 +12,7 @@ public class DictionaryWord extends Rule {
     
     String line;
     private String[] dictionary = {"mama", "myla", "ramu"};
-    private String result = null;
+    private String result = "";
     
         
     /**
