@@ -9,7 +9,11 @@ package stringRules;
 public class MoreThanFiveWords extends Rule {
 
     String line;
-    
+            
+    /**
+     * Constructs instance with line from main class
+     * @param line is a line from main class
+     */
     public MoreThanFiveWords(String line) {
         this.line = line;
     }
