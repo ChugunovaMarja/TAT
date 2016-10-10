@@ -30,7 +30,7 @@ public class MoreThanFiveWords extends Rule {
         if (words.length>5) {
             return ("Complies rule 'Has more than 5 words' \n");
         } else {
-            return null;
+            return "";
         }
     }
 }
