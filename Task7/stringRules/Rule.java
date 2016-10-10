@@ -12,15 +12,4 @@ abstract public class Rule {
      * @return string with message about compliance
      */
     abstract public String checkRule();
-    
-    /**
-     * divides original line into
-     * array of separate words
-     * @param line is an original line
-     * @return array with separate words
-     */
-    public String[] intoWordsArray(String line) {
-        String[] words = line.split("[\\p{Punct}\\s]+");
-        return words;
-    } 
 }
