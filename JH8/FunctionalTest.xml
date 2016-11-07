@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Functional Suite">
+    <test name="MooverTest" preserve-order="true">
+        <classes>
+            <class name="route.MooverTest">
+            </class>
+        </classes>
+    </test>
+    <test name="CostCalculatorTest" preserve-order="true">
+        <classes>
+            <class name="route.CostCalculatorTest">
+            </class>
+        </classes>
+    </test>
+    <test name="DistanceCalculatorTest" preserve-order="true">
+        <classes>
+            <class name="route.DistanceCalculatorTest">
+            </class>
+        </classes>
+    </test>
+    <test name="TimeCalculatorTest" preserve-order="true">
+        <classes>
+            <class name="route.TimeCalculatorTest">
+            </class>
+        </classes>
+    </test>
+    <test name="StatisticsCollectorTest" preserve-order="true">
+        <classes>
+            <class name="route.StatisticsCollectorTest">
+            </class>
+        </classes>
+    </test>
+    <test name="RouteValidatorTest" preserve-order="true">
+        <classes>
+            <class name="route.RouteValidatorTest">
+            </class>
+        </classes>
+    </test>
+</suite> 

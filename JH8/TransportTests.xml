@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Transport Suite">
+    <test name="BusTest" preserve-order="true">       
+        <classes>
+            <class name="route.BusTest">
+                <methods>
+                    <exclude name="getNameNegative()"/>                
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="CarTest" preserve-order="true">       
+        <classes>
+            <class name="route.CarTest">
+                <methods>
+                    <exclude name="getNameNegative()"/>                
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="BicycleTest" preserve-order="true">       
+        <classes>
+            <class name="route.BicycleTest">
+                <methods>
+                    <exclude name="getNameNegative()"/>                
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="LegsTest" preserve-order="true">       
+        <classes>
+            <class name="route.LegsTest">
+                <methods>
+                    <exclude name="getNameNegative()"/>                
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite> 
