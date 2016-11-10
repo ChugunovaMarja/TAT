@@ -13,25 +13,10 @@ public class Validator {
      */
     public static boolean dataValidator(double data) {
 
-        if (data == Double.MIN_VALUE) {
-            return true;
-        }
-        if (data == Double.MAX_VALUE) {
-            return false;
-        }
-        if (Double.isInfinite(1 / data)) {
-            return false;
-        }
-        if (data < 0) {
-            return false;
-        }
-        if (Double.isNaN(data)) {
-            return false;
-        }
-        if (Double.isInfinite(data)) {
-            return false;
-        }
+    if( (data > 0) && (!Double.isNaN(data)) && (!Double.isInfinite(data))) {
         return true;
+    }
+        return false;
     }
 
     /**
