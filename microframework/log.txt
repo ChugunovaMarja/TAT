@@ -1,0 +1,7 @@
++ [open "https://www.google.com"] 3274
++ [CheckPageTitle "Google"] 10
+! [CheckPageContains "Crocodile"] 62
+Total tests: 3
+Passed/Failed: 2/1
+Total time: 3346
+Average time: 1115
